@@ -404,7 +404,7 @@ CREATE TABLE `loja_codigos` (
 --
 
 INSERT INTO `loja_codigos` (`id`, `codigo`, `valor`, `expiracao`, `limite`, `is_limited`) VALUES
-(1, 'majoryanzinho', 100000, '2020-07-15 01:45:12', 127, 0);
+(1, 'majoryanzinho', 100000, '2020-07-15 01:45:12', 999999, 0);
 
 -- --------------------------------------------------------
 
@@ -446,29 +446,6 @@ CREATE TABLE `loja_compras` (
   `presente` tinyint(1) NOT NULL DEFAULT 0,
   `status` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Despejando dados para a tabela `loja_compras`
---
-
-INSERT INTO `loja_compras` (`id`, `id_registro`, `id_comprador`, `id_produto`, `nickname`, `data`, `tipo`, `img`, `msg`, `preco`, `presente`, `status`) VALUES
-(61, 2, 2, 2, 'sihb', '2020-06-18 04:32:08', 2, 'https://i.imgur.com/SWxq6mU.gif', 'a', 0, 0, 1),
-(62, 2, 2, 1, 'sihb', '2020-06-18 17:05:11', 1, 'https://i.imgur.com/SWxq6mU.gif', 'Doctor Who', 100000, 0, 0),
-(63, 3, 2, 121, 'Lilicazinha-l1', '2020-06-18 20:56:34', 1, 'https://i.imgur.com/x5FezzZ.gif', 'NÃ£o uso o adblock.', 1000000, 1, 0),
-(64, 2, 2, 222, 'sihb', '2020-06-25 02:43:47', 1, 'https://i.imgur.com/IDNeDsz.png', 'O amor Ã© livre!', 10, 0, 0),
-(65, 3, 2, 224, 'Lilicazinha-l1', '2020-06-26 14:37:07', 1, 'https://i.imgur.com/V6aZida.gif', 'CaÃ§a ao Tesouro - Evento de PÃ¡scoa.', 100, 1, 0),
-(66, 2, 2, 224, 'sihb', '2020-07-01 15:41:04', 1, 'https://i.imgur.com/V6aZida.gif', 'CaÃ§a ao Tesouro - Evento de PÃ¡scoa.', 100, 0, 0),
-(67, 2, 2, 223, 'sihb', '2020-07-01 15:42:13', 1, 'https://i.imgur.com/LkbBrhL.gif', 'Coringa - The Dark Knight', 10, 0, 0),
-(68, 2, 2, 221, 'sihb', '2020-07-01 15:42:20', 1, 'https://i.imgur.com/UqEIekm.png', 'TrÃªs espiÃ£s demais', 10, 0, 0),
-(69, 2, 2, 220, 'sihb', '2020-07-01 15:42:33', 1, 'https://i.imgur.com/rWo4MFO.gif', 'Alvin e os Esquilos', 10, 0, 0),
-(70, 2, 2, 219, 'sihb', '2020-07-01 15:42:39', 1, 'https://i.imgur.com/DjQIi60.png', 'Boas vibraÃ§Ãµes', 10, 0, 0),
-(71, 2, 2, 218, 'sihb', '2020-07-01 15:43:05', 1, 'https://i.imgur.com/8XrGP7k.gif', 'As Viagens de Gulliver', 10, 0, 0),
-(72, 2, 2, 218, 'sihb', '2020-07-01 15:43:05', 1, 'https://i.imgur.com/8XrGP7k.gif', 'As Viagens de Gulliver', 10, 0, 0),
-(73, 2, 2, 209, 'sihb', '2020-07-01 16:01:28', 1, 'https://i.imgur.com/OfmxeF2.gif', 'FeijÃ£o - Rango', 10, 0, 0),
-(74, 2, 2, 208, 'sihb', '2020-07-01 16:01:35', 1, 'https://i.imgur.com/E9WO8B2.png', 'Lava uma mÃ£o, lava a outra', 5, 0, 0),
-(75, 2, 2, 207, 'sihb', '2020-07-01 16:01:36', 1, 'https://i.imgur.com/ImigDQp.png', 'Senhor VÃ­rus', 5, 0, 0),
-(76, 2, 2, 2, 'sihb', '2020-06-18 04:32:08', 2, 'https://i.imgur.com/SWxq6mU.gif', 'a', 0, 0, 2),
-(77, 2, 2, 2, 'sihb', '2020-06-18 04:32:08', 2, 'https://i.imgur.com/SWxq6mU.gif', 'a', 0, 0, 1);
 
 -- --------------------------------------------------------
 
@@ -734,18 +711,6 @@ CREATE TABLE `noticias_avaliacoes_comentarios` (
   `tipo` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Despejando dados para a tabela `noticias_avaliacoes_comentarios`
---
-
-INSERT INTO `noticias_avaliacoes_comentarios` (`id`, `id_noticia_comentario`, `id_noticia`, `id_registro`, `nickname`, `tipo`) VALUES
-(1, 1, 4, 1, 'majoryanzinho', 1),
-(9, 1, 4, 2, 'majoryanzinho', 2),
-(10, 6, 4, 2, 'sihb', 1),
-(11, 7, 4, 2, 'sihb', 1),
-(14, 11, 4, 2, 'sihb', 1),
-(15, 10, 4, 2, 'sihb', 2);
-
 -- --------------------------------------------------------
 
 --
@@ -977,15 +942,7 @@ CREATE TABLE `registros` (
 --
 
 INSERT INTO `registros` (`id`, `nickname`, `nome`, `email`, `avatar`, `avatar_forum`, `descricao_forum`, `sexo`, `nascimento`, `data_alistamento`, `ultima_promocao`, `promovido_por`, `patente_id`, `status_id`, `faixa`, `confianca`, `advs`, `vip`, `vip_vencimento`, `moedas`) VALUES
-(1, 'BerkHolding', '', NULL, 'https://i.imgur.com/38HBHH9.png', 'https://i.imgur.com/CT7O3o0.png', NULL, 0, '2020-04-04', '2020-05-11 00:00:00', '2020-05-11 00:00:00', 'BerkHolding', 1, 1, 6, 100, 0, 1, '2030-12-31 23:59:59', 40),
-(2, 'sihb', '', 'contato@sihb.site', 'https://i.imgur.com/38HBHH9.png', 'http://projetou.pc/sihb/assets/media/pic_forum/foto_5edd56f527a57.jpg', '<p>abc</p>', 0, '2020-05-11', '2020-05-11 00:00:00', '2020-05-11 14:03:15', 'BerkHolding', 2, 1, 6, 100, 0, 1, '2030-12-31 23:59:59', 20032),
-(3, 'Lilicazinha-l1', '', NULL, 'https://i.imgur.com/38HBHH9.png', 'https://i.imgur.com/CT7O3o0.png', NULL, 0, '2020-02-12', '2020-05-11 00:00:00', '2020-05-11 00:00:00', 'BerkHolding', 3, 1, 1, 100, 0, 0, '0000-00-00 00:00:00', 40),
-(4, 'Piaso', '', NULL, 'https://i.imgur.com/38HBHH9.png', 'https://i.imgur.com/CT7O3o0.png', NULL, 0, '2020-02-12', '2020-05-11 00:00:00', '2020-05-11 00:00:00', 'BerkHolding', 4, 1, 1, 100, 0, 0, '0000-00-00 00:00:00', 40),
-(5, 'sihb', '', NULL, 'https://i.imgur.com/38HBHH9.png', 'https://i.imgur.com/CT7O3o0.png', NULL, 0, '2020-02-12', '2020-05-11 00:00:00', '2020-05-11 00:00:00', 'BerkHolding', 2, 1, 1, 100, 0, 0, '0000-00-00 00:00:00', 40),
-(6, 'sihb', '', NULL, 'https://i.imgur.com/38HBHH9.png', 'https://i.imgur.com/CT7O3o0.png', NULL, 0, '2020-02-12', '2020-05-11 00:00:00', '2020-05-11 00:00:00', 'BerkHolding', 2, 1, 1, 100, 0, 0, '0000-00-00 00:00:00', 40),
-(7, 'sihb', '', NULL, 'https://i.imgur.com/38HBHH9.png', 'https://i.imgur.com/CT7O3o0.png', NULL, 0, '2020-02-12', '2020-05-11 00:00:00', '2020-05-11 00:00:00', 'BerkHolding', 2, 1, 1, 100, 0, 0, '0000-00-00 00:00:00', 40),
-(8, 'sihb', '', NULL, 'https://i.imgur.com/38HBHH9.png', 'https://i.imgur.com/CT7O3o0.png', NULL, 0, '2020-02-12', '2020-05-11 00:00:00', '2020-05-11 00:00:00', 'BerkHolding', 2, 1, 1, 100, 0, 0, '0000-00-00 00:00:00', 40),
-(9, 'sihb', '', NULL, 'https://i.imgur.com/38HBHH9.png', 'https://i.imgur.com/CT7O3o0.png', NULL, 0, '2020-02-12', '2020-05-11 00:00:00', '2020-05-11 00:00:00', 'BerkHolding', 2, 1, 1, 100, 0, 0, '0000-00-00 00:00:00', 40);
+(2, 'majoryanzinho', '', 'majoryanzinho@majoryanzinho.site', 'https://i.imgur.com/38HBHH9.png', 'http://projetou.pc/sihb/assets/media/pic_forum/foto_5edd56f527a57.jpg', '<p>abc</p>', 0, '2020-05-11', '2020-05-11 00:00:00', '2020-05-11 14:03:15', 'majoryanzinho', 2, 1, 6, 100, 0, 1, '2030-12-31 23:59:59', 20032);
 
 -- --------------------------------------------------------
 
@@ -1003,25 +960,6 @@ CREATE TABLE `relatorios` (
   `responsavel_id` int(11) NOT NULL,
   `relatorio` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Despejando dados para a tabela `relatorios`
---
-
-INSERT INTO `relatorios` (`id`, `tipo`, `status`, `data`, `id_registro`, `id_criador`, `responsavel_id`, `relatorio`) VALUES
-(1, 1, 1, '2020-06-23 13:37:30', 2, 0, 1, '{\"Data\":\"23\\/06\\/2020 13:37:30\",\"Responsavel\":\"BerkHolding\",\"Atendente\":\"sihb\",\"Novato\":\"aaaaa\"}'),
-(2, 1, 0, '2020-06-23 14:22:17', 2, 0, 1, '{\"Data\":\"23\\/06\\/2020 14:22:17\",\"Responsavel\":\"BerkHolding\",\"Atendente\":\"sihb\",\"Novato\":\"aaaaa\"}'),
-(3, 2, 0, '2020-06-23 14:57:40', 2, 0, 4, '{\"Data\":\"23\\/06\\/2020 14:57:40\",\"Responsavel\":\"Piaso\",\"Atendente\":\"sihb\",\"Novato\":\"aaaaa\"}'),
-(4, 3, 0, '2020-06-23 14:57:51', 2, 0, 0, '{\"Data\":\"23\\/06\\/2020 14:57:51\",\"Nickname\":\"sihb\",\"Contas\":\"aaaa\"}'),
-(5, 7, 0, '2020-06-23 14:58:05', 2, 0, 0, '{\"Data\":\"23\\/06\\/2020 14:58:05\",\"Nickname\":\"sihb\",\"Contas\":\"aaaa\",\"Tempo\":\"1 hora\",\"Responsavel\":\"majoryanzinho\"}'),
-(6, 4, 0, '2020-06-23 15:02:07', 2, 0, 2, '{\"Data\":\"23\\/06\\/2020 15:02:07\",\"Treinamento\":\"Estagi\\u00e1rios\",\"Responsavel\":\"sihb\",\"Atendente\":\"sihb\",\"Novato\":\"majoryanzinho\"}'),
-(7, 4, 0, '2020-06-23 15:04:50', 2, 0, 2, '{\"Data\":\"23\\/06\\/2020 15:04:50\",\"Treinamento\":\"Estagi\\u00e1rios\",\"Responsavel\":\"sihb\",\"Atendente\":\"sihb\",\"Novato\":\"majoryanzinho\"}'),
-(8, 6, 0, '2020-06-23 15:05:44', 2, 0, 0, '{\"Data\":\"23\\/06\\/2020 15:05:44\",\"Nickname\":\"sihb\",\"Sugestao\":\"asdasdasdasdasd\"}'),
-(9, 1, 2, '2020-06-23 14:22:17', 3, 0, 1, '{\"Data\":\"23\\/06\\/2020 14:22:17\",\"Responsavel\":\"BerkHolding\",\"Atendente\":\"sihb\",\"Novato\":\"aaaaa\"}'),
-(10, 8, 0, '2020-07-14 17:34:42', 2, 2, 0, '{\"Data\":\"14\\/07\\/2020 17:34:42\",\"Professor\":\"sihb\",\"Membro\":\"asdasdasd\",\"Tipo\":\"Programa de Gest\\u00e3o de Carreira (PGC)\"}'),
-(11, 10, 0, '2020-07-25 20:11:35', 2, 2, 0, '{\"Data\":\"2020-07-25 20:11:35\",\"Promotor\":\"sihb\",\"Membro\":\"sihb\",\"Tipo\":\"aaa\",\"Premio\":111}'),
-(12, 8, 0, '2020-07-25 20:18:03', 2, 2, 0, '{\"Data\":\"25\\/07\\/2020 20:18:03\",\"Professor\":\"sihb\",\"Membro\":\"aaaa\",\"Tipo\":\"Cr\\u00edticas\"}'),
-(13, 11, 0, '2020-07-25 20:18:53', 2, 2, 0, '{\"Data\":\"25\\/07\\/2020 20:18:53\",\"Professor\":\"sihb\",\"Membro\":\"aaaa\",\"Tipo\":\"Cr\\u00edticas\"}');
 
 -- --------------------------------------------------------
 
