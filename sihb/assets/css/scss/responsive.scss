@@ -1,0 +1,404 @@
+@media only screen and (max-width: 320px) {
+  .top div#funcionamento {
+    display: none !important;
+  }
+
+  .perfil.vip {
+    background-position-x: right;
+  }
+
+  .forum .post p {
+    width: 150px;
+  }
+  div#novidades {
+    flex-direction: column;
+  }
+  div#novidades-conteudo {
+    height: -webkit-fill-available;
+  }
+
+  div.resultado .avatar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .top div#funcionamento {
+    display: none !important;
+  }
+
+  .perfil.vip {
+    background-position-x: right;
+  }
+
+  div#novidades {
+    flex-direction: column;
+  }
+  div#novidades-conteudo {
+    height: -webkit-fill-available;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .top div:nth-child(1):after {
+    content: unset;
+  }
+
+  .melhores div.container.d-flex {
+    flex-direction: column;
+  }
+
+  .melhores .rankings .ranking {
+    flex-direction: column;
+    width: 200px;
+    height: -webkit-fill-available;
+    margin: 40px auto 20px auto;
+  }
+
+  .melhores .rankings .ranking .ranking-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .melhores .ranking-geral .rg {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .nl {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .top {
+    flex-direction: column;
+    height: unset;
+  }
+
+  .top div:nth-child(1) {
+    width: 100%;
+    justify-content: center;
+    padding-right: unset;
+  }
+
+  .top div:nth-child(1):after {
+    content: unset;
+  }
+
+  .top div#funcionamento {
+    width: 100% !important;
+    justify-content: space-around;
+  }
+
+  div#radio-pesquisa,
+  div#radio-forum {
+    flex-wrap: wrap;
+  }
+
+  div#radio-pesquisa .noticia,
+  div#radio-forum .noticia {
+    margin-right: unset !important;
+  }
+
+  div#radio-pesquisa .noticia img:nth-child(1),
+  div#radio-forum .noticia img:nth-child(1) {
+    width: 100%;
+  }
+
+  .destaque-semana-pesquisa,
+  div#noticias-botoes #noticias {
+    width: -webkit-fill-available;
+  }
+
+  .dd1 {
+    flex-direction: column;
+  }
+
+  div#busca-registro {
+    width: -webkit-fill-available;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #cursos-adicionais,
+  .blacklist,
+  .hb-etiqueta {
+    width: -webkit-fill-available;
+    background-repeat: no-repeat;
+    background-color: #000;
+  }
+
+  .hb-etiqueta {
+    background-color: #f3f3f3;
+  }
+
+  #cursos-adicionais:hover,
+  .blacklist:hover {
+    background-color: #fff;
+    background-repeat: no-repeat;
+  }
+
+  .hb-etiqueta:hover {
+    background-color: #000;
+    background-repeat: no-repeat;
+  }
+
+  .radio-buttons,
+  #radio-pesquisa .radio,
+  #radio-forum .radio,
+  .radio-buttons .radio,
+  #noticias-botoes,
+  div#noticias-botoes #noticias,
+  div#noticias-botoes #noticias .noticias,
+  .comentarios-votacao,
+  .at,
+  .forum,
+  .forum #posts #topo,
+  .grupos {
+    flex-direction: column;
+  }
+
+  .forum #posts::before {
+    content: "";
+  }
+
+  .forum #posts #topo {
+    width: -webkit-fill-available;
+    padding-right: inherit;
+  }
+
+  div#noticias-botoes #noticias .noticias {
+    display: flex;
+    align-items: center;
+  }
+
+  div#noticias-botoes #noticias .noticia:nth-child(2) {
+    width: 240px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  div#noticias-botoes #noticias #vermais {
+    padding: 0px 10px 0px 10px;
+  }
+
+  .forum #posts #topo {
+    height: auto;
+  }
+  .forum #posts #topo form {
+    margin-top: 10px;
+  }
+
+  .forum #forum-info {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .forum #forum-info .categorias,
+  div#busca-registro form input {
+    width: -webkit-fill-available;
+  }
+
+  .forum #forum-info .categorias-body li {
+    width: calc(100% / 2);
+  }
+
+  .grupos .grupo,
+  .grupos .grupo .grupo-body #grupos {
+    width: -webkit-fill-available;
+  }
+
+  .grupos .grupo .grupo-footer .botoes {
+    right: 0;
+  }
+
+  .grupos .vip,
+  .grupos .discord {
+    margin-left: 0;
+    margin-top: 10px;
+    width: -webkit-fill-available;
+  }
+
+  .veja-tambem {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .veja-tambem h3 {
+    margin-right: unset;
+  }
+
+  .veja-tambem h3:after {
+    content: unset;
+  }
+
+  .veja-tambem a {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  #logado-comentarios .comentarios,
+  #logado-comentarios .comentar,
+  .av .avalie,
+  .forum #posts,
+  .radio-buttons,
+  #adicionais,
+  #blist,
+  #radio-pesquisa .radio,
+  .perfil .amigos-estatisticas-confianca .estatisticas,
+  .perfil .amigos-estatisticas-confianca .confianca {
+    width: -webkit-fill-available;
+  }
+
+  .perfil .usuario-info,
+  .perfil .sobre,
+  .perfil .sobre .estatisticas #esta div.d-flex.justify-center.mt-10,
+  .perfil .favoritos-grafico,
+  .perfil .favoritos-grafico .grafico div.d-flex.align-center,
+  .perfil .amigos-estatisticas-confianca,
+  .perfil .amigos-estatisticas-confianca .estatic,
+  .destaques,
+  #news-info,
+  .todas-noticias .botoes,
+  .loj {
+    flex-direction: column;
+  }
+
+  .perfil .favoritos-grafico,
+  .perfil .amigos-estatisticas-confianca,
+  .perfil .amigos-estatisticas-confianca .estatisticas #estatisticas,
+  .perfil .amigos-estatisticas-confianca .estatic {
+    height: auto;
+  }
+  .perfil .favoritos-grafico .grafico {
+    padding-bottom: 90px;
+  }
+
+  .grafico .este-mes,
+  .grafico .mes-passado {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .perfil .amigos-estatisticas-confianca .estatisticas {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .perfil .sobre .info-emblemas-honrarias,
+  .perfil .favoritos-grafico .favoritos,
+  .perfil .amigos-estatisticas-confianca .amigos {
+    width: -webkit-fill-available;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .perfil .infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 11px;
+  }
+
+  .destaques h1:before,
+  .todas-noticias .infos:before,
+  .ultimas-novidades:after,
+  .shop.emblemas:before,
+  .shop.beneficios:before {
+    content: unset;
+  }
+
+  .destaques .noticias {
+    margin-left: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .destaques .noticia {
+    width: 300px !important;
+    margin-bottom: 10px;
+    margin-left: 0 !important;
+  }
+
+  .todas-noticias {
+    flex-direction: column-reverse;
+    margin-right: unset;
+    width: -webkit-fill-available;
+  }
+
+  .todas-noticias .infos {
+    margin-right: unset;
+  }
+
+  .top div#sihb {
+    width: -webkit-fill-available;
+    text-align: center;
+    padding: 0;
+  }
+
+  .loja,
+  .shop {
+    width: -webkit-fill-available !important;
+    margin-bottom: 10px;
+  }
+
+  .shop .shop-body {
+    justify-content: center;
+  }
+
+  .shop.beneficios {
+    margin-top: 30px;
+  }
+
+  .av {
+    margin-left: 0 !important;
+    margin-top: 10px;
+  }
+
+  .at {
+    align-items: center;
+  }
+
+  .anuncio img {
+    width: 100%;
+  }
+
+  .twitter-social {
+    position: relative;
+  }
+
+  footer .footer-head div.d-flex.space-between.align-center {
+    width: -webkit-fill-available !important;
+    flex-direction: column;
+  }
+
+  footer .footer-head div.d-flex.space-between.align-center img {
+    width: 100%;
+  }
+
+  footer .footer-body div {
+    width: -webkit-fill-available !important;
+    background: unset;
+    height: auto !important;
+  }
+
+  .footer-body .socials {
+    position: relative;
+    width: -webkit-fill-available;
+  }
+
+  .footer-body div p,
+  .todas-noticias .pesquise {
+    width: -webkit-fill-available !important;
+  }
+
+  .melhores div.container.d-flex {
+    flex-direction: column;
+  }
+}

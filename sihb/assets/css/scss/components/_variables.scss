@@ -1,0 +1,38 @@
+$yellow-primary:#CB9801;
+$yellow-secundary:#e7c945;
+$green-primary: #00A900;
+$green-secundary:#37dc59;
+$border:10px;
+
+@mixin box-shadow($content1) {
+    -webkit-box-shadow: $content1;
+    -moz-box-shadow: $content1;
+    box-shadow: $content1;
+}
+
+@mixin linearBackground($content0, $content1, $color1, $color2) {
+	background:$content0;
+	background: -moz-linear-gradient($content1);
+	background: -webkit-linear-gradient($content1);
+	background: linear-gradient($content1);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$color1},endColorstr=#{$color2},GradientType=1);
+}
+
+@mixin radialBackground($content0, $content1, $content2) {
+    background:$content0;
+    background: -moz-radial-gradient($content1);
+    background: -webkit-radial-gradient($content1);
+    background: radial-gradient($content1);
+    filter:$content2;
+}
+
+@mixin background-gradient-and-image ($imgUrl0, $imgUrl, $content1) {
+    background: url($imgUrl0); /* fallback */
+    background: $imgUrl, -webkit-gradient($content1); /* Saf4+, Chrome */
+    background: $imgUrl, -webkit-linear-gradient($content1); /* Chrome 10+, Saf5.1+ */
+    background: $imgUrl,    -moz-linear-gradient($content1); /* FF3.6+ */
+    background: $imgUrl,     -ms-linear-gradient($content1); /* IE10 */
+    background: $imgUrl,      -o-linear-gradient($content1); /* Opera 11.10+ */
+    background: $imgUrl,         linear-gradient($content1); /* W3C */
+}
+

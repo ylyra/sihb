@@ -1,0 +1,899 @@
+@import './components/variables';
+
+#funcionamento ul {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    list-style: none;
+}
+
+#funcionamento li {
+    padding: 15px;
+}
+
+#funcionamento a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#funcionamento a:hover {
+    color: #F9DF93;
+}
+
+.top {
+
+    div:nth-child(1) {
+        width: 345px;
+        padding-right: 80px;
+        position: relative;
+    }
+
+    div#funcionamento {
+        width: calc(90% - 425px);
+    }
+
+}
+
+.perfil {
+    background: url(https://i.imgur.com/5cAtnCK.png) no-repeat, linear-gradient(to bottom, transparent 0px, transparent 700px, #fff 700px, #fff 100%);
+    background: url(https://i.imgur.com/5cAtnCK.png) no-repeat, -moz-linear-gradient(to bottom, transparent 0px, transparent 700px, #fff 700px, #fff 100%);
+    background: url(https://i.imgur.com/5cAtnCK.png) no-repeat, -webkit-linear-gradient(to bottom, transparent 0px, transparent 700px, #fff 700px, #fff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFFFF", endColorstr="#FFFFFF", GradientType=1);
+    background-position-x: center;
+    background-repeat: repeat-x;
+
+    .container {
+        padding-top: 20px;
+    }
+
+    .user {
+        position: relative;
+        margin-left: 45px;
+        margin-top: 20px;
+    }
+
+    .user .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+        overflow: hidden;
+        border: 5px solid #fff;
+        background: #6F5329;
+        background: linear-gradient(135deg,#6F5329 0%,#FAE094 80%);
+        background: -moz-linear-gradient(135deg,#6F5329 0%,#FAE094 80%);
+        background: -webkit-linear-gradient(135deg,#6F5329 0%,#FAE094 80%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6F5329", endColorstr="#FAE094", GradientType=1);
+        position: absolute;
+        bottom: -5px;
+        left: -5px;
+        z-index: 999;
+    }
+
+    .user .avatar img {
+        margin-top: -20px;
+        margin-left: -7px;
+    }
+
+    .user .foto {
+        width: 160px;
+        height: 160px;
+        border: 5px solid #fff;
+        border-radius: 85px;
+        background: #fff;
+        position: relative;
+        overflow: hidden;
+
+        button {
+            position: absolute;
+            border-radius: 80px;
+            background: rgba(0,0,0,0.75);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            display:none;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            cursor: pointer;
+            color:white;
+            border:0;
+            outline: 0;
+        }
+
+        &:hover button {
+            display: flex;
+        }
+    }
+
+    .infos {margin-left: 50px;}
+    .infos .registro-numero {
+        width: fit-content;
+        height: 25px;
+        background: #000000;
+        line-height: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 15px;
+        text-align: center;
+        font-size: 14px;
+        color: #FAE094;
+    }
+
+    .infos .nickname {        
+        width: fit-content;
+        height: 40px;
+        background: rgba(0,0,0,0.5);
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 20px;
+        font-weight: 900;
+        color: #F8DF92;
+        text-transform: uppercase;
+        line-height: 40px;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .infos .nome {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: fit-content;
+        background: #fff;
+        height: 31px;
+        line-height: 31px;
+        color: #3D2D15;
+        font-weight: 900;
+        text-transform: uppercase;
+        border-radius: 15px;
+    }
+
+    .favoritar {
+        width: 200px;
+        height: 40px;
+        font-size: 13px;
+        border-radius: 20px;
+        border: unset;
+        outline: unset;
+        @include linearBackground(#FFFFFF, (90deg, #FFFFFF 0%, #FAE094 50%), #FFFFFF, #FAE094);
+        box-shadow: 0px 0px 20px rgba(216, 200, 153, 0.75);
+        color: #423118;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-decoration: none;
+
+        i {
+            font-size: 20px;
+        }
+    }
+}
+
+.perfil.vip {
+    background: url(https://i.imgur.com/CWNoRFV.png) no-repeat, linear-gradient(to bottom, transparent 0px, transparent 700px, #fff 700px, #fff 100%);
+    background: url(https://i.imgur.com/CWNoRFV.png) no-repeat, -moz-linear-gradient(to bottom, transparent 0px, transparent 700px, #fff 700px, #fff 100%);
+    background: url(https://i.imgur.com/CWNoRFV.png) no-repeat, -webkit-linear-gradient(to bottom, transparent 0px, transparent 700px, #fff 700px, #fff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFFFF", endColorstr="#FFFFFF", GradientType=1);
+    background-position-x: center;
+    background-repeat: repeat-x;
+}
+
+.perfil .sobre {
+    margin-top: 20px;
+    background: url("https://i.imgur.com/ndi9tVt.png");
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+.perfil .sobre .info-emblemas-honrarias {
+    width: 250px;
+    margin-right: 10px;
+    .info,
+    .emblemaas,
+    .honrarias {
+        padding: 10px;
+        background: #000;
+        margin-bottom:10px;
+    }
+
+    .emblemaas {
+        padding: 5px;
+    }
+
+    .info h1,
+    .emblemaas h1,
+    .honrarias h1 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 900;
+        text-align: center;
+        color: #FAE094;
+        margin-bottom: 5px;
+    }
+
+    .info p.nome, .info p.idade, .info p.data-inscricao, .info p.cargo-atual,
+    .honrarias p {
+        font-size: 12px;
+    }
+
+    .honrarias p {
+        text-align: center;
+    }
+
+    .info p.nome span, .info p.idade span, .info p.data-inscrocao span, .info p.cargo-atual span {
+        color: #FAE094;
+        font-weight: 600;
+    }
+
+    .emblemaas .emblemas {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .emblemaas .emblemas .emblema {
+        background: #111111;
+        width: 54px;
+        height: 54px;
+        margin-right: 1px;
+        margin-bottom: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .forum-message .user .emblemas .emblema:hover {
+        background: #222222;
+    }
+}
+
+.perfil .sobre .estatisticas {
+    background: #000;
+    padding: 10px;
+    flex: 1;
+
+    #info {
+        font-size: 12px;
+    }
+
+    #info .ultima-promocao,
+    #info .promovido-por {
+        color:#F9DF93;
+        font-weight: 600;
+    }
+
+    #info .green {
+        color:#00D800;
+        font-weight: 600;
+    }
+
+    #info .red {
+        color:#D80000;
+        font-weight: 600;
+    }
+
+    #esta  {
+        margin-top:10px;
+    }
+
+    #esta h2 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 900;
+        color: #FAE094;
+        margin-bottom: 5px;
+    }
+}
+
+.perfil .sobre .estatisticas #esta .mensagens {
+    
+
+    .mensagens-head h3 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 700;
+        color: #FAE094;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .mensagens-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mensagens-head form {
+        display:flex;
+        align-items: center;
+    }
+
+    .mensagens-head form label {
+        font-size: 12px;
+        color: #999999;
+        font-weight: 700;
+        margin-right: 10px;
+    }
+
+    .comentario .avatar a {
+        background: #000000;
+        border: 1px solid #222222;
+    }
+
+    .comentario .comentario-info p {
+        background: none;
+        color:#fff;
+        border: 1px solid #222222;
+    }
+
+    .comentario .comentario-info div.info a {
+        color: #FAE094;
+    }
+
+    .mensagens-footer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .mensagens-footer p {
+        font-size: 14px;
+        color: #999999;
+        font-weight: 700;
+        margin-right: 10px;
+    }
+
+    .mensagens-footer .botoes button {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        background: #000000;
+        border: 1px solid #222222;
+        border-radius: 5px;
+        color: #AAAAAA;
+    }
+}
+
+.perfil .favoritos-grafico {
+    display: flex;
+    height: 300px;
+    color:#000;
+    margin-top: 30px;
+
+    .favoritos {
+        width: 250px;
+        margin-right: 10px;
+        background: url(https://i.imgur.com/JuVK61A.png);
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    }
+
+    .favoritos h1,
+    .grafico h1 {
+        font-size: 18px;
+        text-transform: uppercase;
+        // text-align: center;
+        font-weight: 900;
+        margin: 0;
+        margin-top: 10px;
+        padding: 10px;
+        background: url(https://i.imgur.com/OWfNM4v.png);
+    }
+
+    .grafico h1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .grafico h1 form {
+        display: flex;
+        align-items: center;
+    }
+
+    .grafico h1 form label {
+        font-size: 12px;
+        color: #999999;
+        font-weight: 700;
+        margin-right: 10px;
+    }
+
+    .grafico h1 .select-items div, .grafico h1 .select-selected {
+        font-size: 9px;
+        color:#777777;
+        border: 1px solid #DDDDDD;
+        font-weight: 700;
+    }
+
+    .grafico h1 .select-selected, .grafico h1 .select-items {
+        background: #fff;
+        border: 1px solid #DDDDDD;
+        font-weight: 700;
+    }
+
+    .grafico h1 .select-selected.select-arrow-active:after {
+        border-color: transparent transparent #ddd transparent;
+    }
+    .grafico h1 .select-selected:after {
+        border-color: #ddd transparent transparent transparent;
+    }
+
+    .favoritos #favoritos {
+        height: 250px;
+        overflow: hidden;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            width: 6px;
+            background-color: #F5F5F5;
+            height: 80px;
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            @include linearBackground(#7E6D38, (to bottom, #7E6D38 0%, #7E6D38 80%), #7E6D38, #7E6D38);
+        }
+    
+        &::-webkit-scrollbar-track {
+            /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+            background-color: #F5F5F5;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    }
+
+    .favoritos .favorito {
+        display: flex;
+        align-items: center;
+    }
+
+    .favoritos .favorito p {
+        font-size: 13px;
+    }
+
+    .favoritos .favorito p span.nickname {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .grafico {
+        flex: 1;
+        background: url(https://i.imgur.com/JuVK61A.png);
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+        position: relative;
+    }
+
+    .grafico:after {
+        content: url(https://i.imgur.com/NSN2Gin.png);
+        position: absolute;
+        right: 0;
+        bottom: -3px;
+    }
+
+    .grafic .grafico-geral .info h5 {
+        font-size: 17px;
+        font-weight: 800;
+    }
+
+    .grafic .grafico-geral .info p.mes,
+    .grafic .grafico-geral .info p.posicao {
+        font-size: 12px;
+    }
+
+    .mes-passado #nao-vip {
+        display:none;
+    }
+
+    .mes-passado.nao-vip {
+        position: relative;
+
+        #nao-vip {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                font-weight: 800;
+                color: #fff;
+                text-shadow: 1px 1px 1px #000;
+                font-size: 20px;
+            }
+        }
+    }
+
+    #advs {
+        display: grid;
+        grid-template-areas:
+            "adv3 adv3"
+            "adv2 adv1";
+        align-items: center;
+        margin-bottom:5px;
+        
+        .adv.tem {
+            background: #D90000;
+        }
+
+        .adv {
+            width: 20px;
+            height: 20px;
+            background: #999;
+            border-radius: 10px;
+            margin-bottom:3px;
+            margin-right: 3px;
+        }
+
+        .adv:nth-child(1) {
+            grid-area: adv1;
+            justify-self: center;
+        }
+
+        .adv:nth-child(2) {
+            grid-area: adv2;
+        }
+
+        .adv:nth-child(3) {
+            grid-area: adv3;
+            justify-self: center;
+        }
+    }
+
+    .advs {
+        p {
+            font-weight: 900;
+            font-size: 13px;
+        }
+    }
+}
+
+.perfil .amigos-estatisticas-confianca {
+    display: flex;
+    height: 300px;
+    color:#000;
+    margin-top: 30px;
+
+    .amigos {
+        width: 250px;
+        margin-right: 13px;
+        background: url(https://i.imgur.com/JuVK61A.png);
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    }
+
+    .amigos h1,
+    .estatisticas h1,
+    .confianca h1 {
+        font-size: 18px;
+        text-transform: uppercase;
+        // text-align: center;
+        font-weight: 900;
+        margin: 0;
+        margin-top: 10px;
+        padding: 10px;
+        background: url(https://i.imgur.com/OWfNM4v.png);
+    }
+
+    .estatisticas {
+        width: 470px;
+        margin-right: 13px;
+        background: url(https://i.imgur.com/JuVK61A.png);
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    }
+
+    .confianca {
+        background: url(https://i.imgur.com/JuVK61A.png);
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+        width: 250px;
+        position: relative;
+
+        &:before {
+            content:url(https://i.imgur.com/8RoTK9N.png);
+            position: absolute;
+            right: 0;
+            bottom: -3px;
+        }
+    }
+
+    .amigos #amigos,
+    .estatisticas #estatisticas {
+        height: 250px;
+    }
+
+    .confianca #confianca {
+        height: 210px;
+    }
+    
+    .amigos #amigos #nao-vip,
+    .estatisticas #estatisticas #nao-vip,
+    .confianca #nao-vip {
+        display:none;
+    }
+
+    .amigos #amigos.nao-vip,
+    .estatisticas #estatisticas.nao-vip,
+    .confianca #confianca.nao-vip {
+        position: relative;
+
+        #nao-vip {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top:0;
+            left:0;
+
+            p {
+                font-weight: 800;
+                color: #fff;
+                text-shadow: 1px 1px 1px #000;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .amigos #amigos {
+        padding: 10px 10px 10px 28px;
+    }
+
+    .amigos #amigos .amigo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 20px;
+        height: 52px;
+        border: 2px solid;
+        border-radius: 10px;
+        border-color: #00CC00;
+        color:#00CC00;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        position: relative;
+
+        p {
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+
+    .estatic {
+        display: flex;
+        height: 250px;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-right: 10px;
+    }
+
+    .estatic .legendas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .estatic .legendas p.total {
+        font-weight: 600;
+    }
+
+    .estatic .legendas p {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    
+    .estatic .legendas p span {
+        font-weight: 600;
+    }
+
+    .estatic .legendas p span.aplicados {
+        color: #9326FF;
+    }
+
+    .estatic .legendas p span.recebidos {
+        color: #D90000;
+    }
+
+    .estatic .legendas p span.auxiliados {
+        color: #FF8000;
+    }
+
+    .estatic .legendas p span.helper {
+        color: #3053AF;
+    }
+
+    .estatic .legendas p span.supervisor {
+        color: #008C46;
+    }
+
+    .estatic .chart-total {
+        margin: 0!important;
+    }
+
+    .confianca #confianca {
+        padding: 10px;
+
+        p#caminho {
+            margin-top: 20px;
+            font-size: 15px;
+            font-weight: 700;
+            color: #222222;
+            width: 164px;
+        }
+
+        p#sobre {
+            margin-top: 10px;
+            color: #525252;
+            width: 164px;
+            font-size: 13px;
+        }
+    }
+
+    #confianca .n {
+        font-size: 18px;
+        font-weight: 700;
+        color: #36D900;
+        margin-bottom: 5px;
+    }
+
+    #confianca .nivel {
+        height: 15px;
+        border-radius:10px;
+        position: relative!important;
+        background-repeat: no-repeat!important;
+        background-color: #777!important;
+    }
+
+    #confianca .nivel span {
+        width: 20px;
+        height: 20px;
+        background: #fff;
+        display: block;
+        border-radius: 20px;
+        position: absolute;
+        top: -3px;@include linearBackground(#FFFFFF, (to top, #FFFFFF 0%, #EEEEEE 100%), #FFFFFF, #EEEEEE);
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    }
+
+}
+
+.perfil .amigos-estatisticas-confianca .amigos #amigos .amigo.coracao {
+    border-color: #E81224;
+    color:#E81224;
+
+    &:before {
+        content:url(https://i.imgur.com/ybCH8Wc.png);
+        position: absolute;
+        left: -15px;
+    }
+}
+
+.perfil .amigos-estatisticas-confianca .amigos #amigos .amigo.feliz {
+    border-color: #FFC83D;
+    color:#FFC83D;
+
+    &:before {
+        content:url(https://i.imgur.com/vYz5zXj.png);
+        position: absolute;
+        left: -15px;
+    }
+}
+
+
+.perfil .amigos-estatisticas-confianca .amigos #amigos .amigo.money {
+
+    &:before {
+        content:url(https://i.imgur.com/ngINhiJ.png);
+        position: absolute;
+        left: -15px;
+    }
+}
+
+
+
+
+.bug form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+
+/* The container must be positioned relative: */
+.custom-select {
+    position: relative;
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element: */
+}
+
+.select-selected {
+    background-color: #000;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+    color: #ffffff;
+    padding: 11px 16px;
+    font-size: 11px;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: #000;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.chart-total {
+    position: relative;
+    margin: 0 auto;
+
+    .chart-total-legend {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translateY(-50%) translateX(-50%);
+        -o-transform: translateY(-50%) translateX(-50%);
+        -moz-transform: translateY(-50%) translateX(-50%);
+        -moz-transform: translateY(-50%) translateX(-50%);
+        transform: translateY(-50%) translateX(-50%);
+    }
+    
+    .legend-val {
+        font-size: 4em;
+        display: block;
+        text-align: center;
+        font-weight: 300;
+        color:#F9DF93;
+    }
+    
+    .legend-desc {
+        display: block;
+        margin-top: 5px;
+        text-align: center;
+        font-size: 12px;
+        color:#F9DF93;
+    }
+}

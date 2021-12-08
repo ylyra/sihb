@@ -1,0 +1,860 @@
+#funcionamento ul {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    list-style: none;
+}
+
+#funcionamento li {
+    padding: 15px;
+}
+
+#funcionamento a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#funcionamento a:hover {
+    color: #ED2122;
+}
+
+.top {
+
+    div:nth-child(1) {
+        width: 345px;
+        padding-right: 80px;
+        position: relative;
+    }
+
+    div:nth-child(1):after {
+        content: url(https://i.imgur.com/jMj6t3B.png);
+        position: absolute;
+        bottom: -3px;
+        right: -11px;
+    }
+
+
+    div#funcionamento {
+        width: calc(90% - 425px);
+    }
+
+}
+
+.melhores {
+    background: url(https://i.imgur.com/p1THqil.jpg) no-repeat, linear-gradient(to bottom, transparent 0px, transparent 700px, #fff 700px, #fff 100%);
+    background: url(https://i.imgur.com/p1THqil.jpg) no-repeat, -moz-linear-gradient(to bottom, transparent 0px, transparent 700px, #fff 700px, #fff 100%);
+    background: url(https://i.imgur.com/p1THqil.jpg) no-repeat, -webkit-linear-gradient(to bottom, transparent 0px, transparent 700px, #fff 700px, #fff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFFFF", endColorstr="#FFFFFF", GradientType=1);
+
+    .container {
+        padding-top: 20px;
+    }
+
+    .rankings h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        background: #FB8F03;
+        background: linear-gradient(0deg, #FB8F03 0%, #EE1E24 90%);
+        background: -moz-linear-gradient(0deg, #FB8F03 0%, #EE1E24 90%);
+        background: -webkit-linear-gradient(0deg, #FB8F03 0%, #EE1E24 90%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FB8F03", endColorstr="#EE1E24", GradientType=1);
+        color: #661A00;
+        width: 108px;
+        padding: 4px;
+        padding-left: 30px;
+        border-radius: 20px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(255, 255, 255, .1);
+        position: relative;
+    }
+
+    .rankings h3:before {
+        content: url(https://i.imgur.com/cpemC2D.png);
+        position: absolute;
+        left: 10px;
+        top: 6px;
+    }
+
+    .rankings p.melhor {
+        font-size: 45px;
+        font-family: 'Eurostile Normal', sans-serif;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    }
+
+    .rankings p.melhor strong {
+        font-size: 46px;
+    }
+
+    .rankings .ranking {
+        width: 600px;
+        height: 200px;
+        background: #FD9F01;
+        background: linear-gradient(315deg, #FD9F01 0%, #ED3E00 90%);
+        background: -moz-linear-gradient(315deg, #FD9F01 0%, #ED3E00 90%);
+        background: -webkit-linear-gradient(315deg, #FD9F01 0%, #ED3E00 90%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FD9F01", endColorstr="#ED3E00", GradientType=1);
+        margin-top: 40px;
+        margin-bottom: 20px;
+        display: flex;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+    }
+
+
+    .rankings .ranking .ranking-left {
+        width: 200px;
+    }
+
+    .rankings .ranking .ranking-left .ranking-tipo {
+        background: #000000;
+        width: 160px;
+        height: 20px;
+        margin-top: 10px;
+        margin-left: 10px;
+        padding: 10px;
+        font-size: 15px;
+        border-radius: 20px;
+        font-weight: 500;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
+
+        strong {
+            font-weight: 900;
+        }
+    }
+
+    .rankings .ranking .ranking-left .ranking-info {
+        height: 140px;
+        text-align: end;
+        padding-right: 20px;
+        margin-top: 10px;
+        position: relative;
+
+        &::after {
+            content: url(https://i.imgur.com/vJgwp2N.png);
+            position: absolute;
+            right: 0;
+            bottom: -3px;
+        }
+
+        p.nickname {
+            color: #FFE599;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        p.cargo {
+            font-size: 11px;
+            color: #FFE599;
+            margin-bottom: 5px;
+        }
+
+        p.total_acoes {
+            font-size: 13px;
+            font-weight: 600;
+            font-family: 'Eurostile Normal', sans-serif;
+        }
+
+        div.posicao {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            width: 41px;
+            height: 42px;
+            border-radius: 40px;
+            background: url(https://i.imgur.com/YcoSKsf.png);
+            text-align: center;
+            line-height: 42px;
+            font-weight: 900;
+            font-size: 22px;
+            font-family: 'Eurostile Normal', sans-serif;
+            color: #663300;
+            -webkit-text-stroke-width: 0.1px;
+            -webkit-text-stroke-color: #000;
+            z-index: 2;
+        }
+    }
+
+    .rankings .ranking .ranking-right {
+        width: 400px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: grid;
+        gap: 3px;
+        grid-template-areas:
+            "m1 m6"
+            "m2 m7"
+            "m3 m8"
+            "m4 m9"
+            "m5 m10";
+    }
+
+    @for $w from 0 through 10 {
+        .rankings .ranking .ranking-right div.ranking-user:nth-child(#{$w}) {
+            grid-area: m#{$w};
+        }
+    }
+
+    .rankings .ranking .ranking-right .ranking-user {
+        height: 34px;
+        width: 194px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        padding-left: 5px;
+        position: relative;
+
+        .place {
+            font-weight: bold;
+            font-size: 20px;
+            margin-left: 10px;
+            margin-right: 5px;
+            color:#661900;
+        }
+
+        &:hover .place {
+            color:white;
+        }
+
+        .avatar img {
+            margin-bottom: -10px;
+        }
+
+        .nickname {
+            color: #FFE599;
+            font-size: 12px;
+            margin-right: 20px;
+            font-weight: 600;
+            font-family: 'Eurostile Normal', sans-serif;
+        }
+
+        .qt {
+            width: 29px;
+            height: 27px;
+            text-align: center;
+            line-height: 27px;
+            border: 1px solid #FBAC0B;
+            border-radius: 5px;
+            position: absolute;
+            right: 5px;
+            font-weight: 600;
+        }
+    }
+
+    .rankings .ranking.treinadores {
+        .ranking-left {
+            background: url(https://i.imgur.com/FGXWwoi.png), #AE2C00;
+
+            .ranking-tipo strong {
+                color: #ED2122;
+            }
+        }
+
+        .ranking-right .ranking-user {
+            background: #FB8E38;
+            background: linear-gradient(to right, #FB8E38 13%, #FA760D 95%);
+            background: -moz-linear-gradient(to right, #FB8E38 13%, #FA760D 95%);
+            background: -webkit-linear-gradient(to right, #FB8E38 13%, #FA760D 95%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FB8E38", endColorstr="#FA760D", GradientType=1);
+        }
+
+        .ranking-right .ranking-user.eu {
+            background: #EC6F0A;
+            background: linear-gradient(to right, #EC6F0A 13%, #A74D03 95%);
+            background: -moz-linear-gradient(to right, #EC6F0A 13%, #A74D03 95%);
+            background: -webkit-linear-gradient(to right, #EC6F0A 13%, #A74D03 95%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#EC6F0A", endColorstr="#A74D03", GradientType=1);
+        }
+
+
+        .ranking-right .ranking-user:hover {
+            background: #000000;
+
+            .nickname {
+                color: #EE2223;
+            }
+
+            .qt {
+                border: 1px solid #000;
+            }
+        }
+    }
+
+    .rankings .ranking.DEs {
+        .ranking-left {
+            background: url(https://i.imgur.com/FGXWwoi.png), #AE2C00;
+
+            .ranking-tipo strong {
+                color: #EE3D00;
+            }
+        }
+
+        .ranking-right .ranking-user {
+            background: #FB8E38;
+            background: linear-gradient(to right, #FB8E38 13%, #FA760D 95%);
+            background: -moz-linear-gradient(to right, #FB8E38 13%, #FA760D 95%);
+            background: -webkit-linear-gradient(to right, #FB8E38 13%, #FA760D 95%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FB8E38", endColorstr="#FA760D", GradientType=1);
+        }
+
+        .ranking-right .ranking-user.eu {
+            background: #EC6F0A;
+            background: linear-gradient(to right, #EC6F0A 13%, #A74D03 95%);
+            background: -moz-linear-gradient(to right, #EC6F0A 13%, #A74D03 95%);
+            background: -webkit-linear-gradient(to right, #EC6F0A 13%, #A74D03 95%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#EC6F0A", endColorstr="#A74D03", GradientType=1);
+        }
+
+        .ranking-right .ranking-user:hover {
+            background: #000000;
+
+            .nickname {
+                color: #EE3D00;
+            }
+
+            .qt {
+                border: 1px solid #000;
+            }
+        }
+    }
+
+    .rankings .ranking.atendimento {
+        background: #DDDDDD;
+
+        .ranking-left {
+            background: url(https://i.imgur.com/5f7quGj.png), #265CFF;
+
+            .ranking-tipo strong {
+                color: #265BFF;
+            }
+
+            .ranking-info p.nickname,
+            .ranking-info p.cargo {
+                color:white;
+            }
+        }
+
+        .ranking-right .ranking-user {
+            background: #eeeeee;
+
+            .place {
+                color: #000;
+            }
+
+            .nickname {
+                color: #676767;
+            }
+
+            .qt {
+                color: #000;
+                border: 1px solid #265CFF;
+            }
+        }
+
+        .ranking-right .ranking-user.eu {
+            background: #FFFFFF;
+        }
+
+        .ranking-right .ranking-user:hover {
+            background: #000000;
+
+            .place {
+                color: #fff;
+            }
+
+            .nickname {
+                color: #265CFF;
+            }
+
+            .qt {
+                color: #fff;
+                border: 1px solid #000;
+            }
+        }
+    }
+
+    .rankings .ranking.executivo {
+        background: #DDDDDD;
+
+        .ranking-left {
+            background: url(https://i.imgur.com/ia1BW8s.png), #238C00;
+
+            .ranking-tipo strong {
+                color: #008C00;
+            }
+
+            .ranking-info p.nickname,
+            .ranking-info p.cargo {
+                color:white;
+            }
+        }
+
+        .ranking-right .ranking-user {
+            background: #eeeeee;
+
+            .place {
+                color: #000;
+            }
+
+            .nickname {
+                color: #676767;
+            }
+
+            .qt {
+                color: #000;
+                border: 1px solid #008C00;
+            }
+        }
+
+        .ranking-right .ranking-user.eu {
+            background: #FFFFFF;
+        }
+
+        .ranking-right .ranking-user:hover {
+            background: #000000;
+
+            .place {
+                color: #fff;
+            }
+
+            .nickname {
+                color: #008C00;
+            }
+
+            .qt {
+                color: #fff;
+                border: 1px solid #000;
+            }
+        }
+    }
+
+
+    .ranking-geral .rg {
+        width: 350px;
+        background: #000;
+        padding-top: 30px;
+        box-shadow: 0px 0px 15px rgba(0,0,0,0.6);
+
+        h2 {
+            font-weight: 400;
+            text-align: center;
+        }
+
+        table {
+            width: 350px;
+            border-spacing: inherit;
+            border-color: unset;
+            display: inline-table;
+        }
+
+        table tr {
+            height: 50px;
+            background: #111;
+            margin-bottom: 6px;
+            display: block;
+            width: 350px;
+        }
+
+        table tr td,
+        table tr th {
+            height: 50px;
+            font-weight: 100;
+
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(4) {
+                width: 50px;
+                text-align: center;
+                text-shadow: 0px 0px 0px #000;
+            }
+
+            &:nth-child(3) {
+                width: calc(350px - 150px - 10px);
+                text-align: inherit;
+                padding-left: 10px;    
+                font-weight: 600;
+                font-size: 17px;
+            }
+        }
+
+        table tr:nth-child(1) {
+            margin-bottom: 0;
+            font-size: 11px;
+            color: #333;
+        }
+
+        table tr td {
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(4) {
+                width: 50px;
+                text-align: center;
+                text-shadow: 0px 0px 0px #000;
+                color: #EE2223;
+                font-weight: 600;
+                font-size: 20px;
+            }
+        }
+
+        table tr td:nth-child(2) {
+            background-repeat: no-repeat;
+            background-position: center -9px;
+            background-color: #EE2223;
+            text-align: center;
+            position: relative;
+
+            &:before {
+                content: url(https://i.imgur.com/VwRUYy3.png);
+                position: absolute;
+                left: 2px;
+                bottom: -3px;
+            }
+        }        
+
+        table tr:nth-child(2) {
+            background: #FBB00C;
+            background: linear-gradient(to right, #FBB00C 13%, #F56B00 95%);
+            background: -moz-linear-gradient(to right, #FBB00C 13%, #F56B00 95%);
+            background: -webkit-linear-gradient(to right, #FBB00C 13%, #F56B00 95%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FBB00C", endColorstr="#F56B00", GradientType=1);
+            position: relative;
+
+            td {
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(4) {
+                    -webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: rgba(216, 255, 0, 0.09);
+                    color:#663300;
+                }
+
+                &:nth-child(2) {
+                    background-color:#FDC44D;
+
+                    &:before {
+                        content: url(https://i.imgur.com/E5veMJ5.png);
+                    }
+                }
+            }
+
+            &:before {
+                content: url(https://i.imgur.com/aVZ2qQO.png);
+                position: absolute;
+                transform: rotate(180deg);
+                top: -3px;
+            }
+
+            &:after {
+                content: url(https://i.imgur.com/aVZ2qQO.png);
+                position: absolute;
+                bottom: -3px;
+                right: 0;
+            }
+        }
+
+        table tr:nth-child(3) {
+            color: #BBBBBB;
+
+            td {
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(4) {
+                    color:#BBBBBB;
+                }
+
+                &:nth-child(2) {
+                    background-color:#999999;
+                }
+            }
+        }
+
+        table tr:nth-child(4) {
+            color: #D36A2C;
+
+            td {
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(4) {
+                    color:#D36A2C;
+                }
+
+                &:nth-child(2) {
+                    background-color:#B22D00;
+                }
+            }
+        }
+
+        table tr th {
+            font-size: 11px!important;
+            font-weight: 600!important;
+        }
+
+        .minha-posicao {
+            height: 50px;
+            background: #EC2021;
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 15px;
+        }
+    }
+
+    .bug {
+        margin-top: 20px;
+        background: #000;
+        padding: 20px;
+        box-shadow: 0px 0px 15px rgba(0,0,0,0.6);
+        height: 210px;
+        position: relative;
+
+        p:nth-child(1) {
+            font-size: 20px;
+            font-weight: 400;
+            width: 180px;
+        }
+
+        p:nth-child(2) {
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+        &::after {
+            content: url(https://i.imgur.com/A0c1MzV.png);
+            right: 0;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .custom-file-input {
+            color: transparent;
+            outline: 0;
+            width: 125px;
+            height: 37px;
+            overflow: hidden;
+            background: url(https://i.imgur.com/u3G2Uu9.png);
+            background-repeat: no-repeat;
+            background-position: 10px center;
+        }
+
+        .custom-file-input::-webkit-file-upload-button {
+            visibility: hidden;
+        }
+
+        .custom-file-input::before {
+            content: 'Anexar arquivo';
+            color: white;
+            display: inline-block;
+            background: transparent;
+            border: 1px solid #333333;
+            border-radius: 3px;
+            padding: 12px 10px 12px 30px;
+            outline: none;
+            white-space: nowrap;
+            -webkit-user-select: none;
+            cursor: pointer;
+            font-size: 11px;
+        }
+        .custom-file-input:hover::before {
+            border-color: white;
+        }
+        .custom-file-input:active {
+            outline: 0;
+            border-color: white;
+        }
+    }
+}
+
+.bug form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+
+/* The container must be positioned relative: */
+.custom-select {
+    position: relative;
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element: */
+}
+
+.select-selected {
+    background-color: #000;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+    color: #ffffff;
+    padding: 11px 16px;
+    font-size: 11px;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: #000;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+input#nickname, input#qt {
+    outline: 0;
+    width: 125px;
+    height: 37px;
+    background: transparent;
+    border: 1px solid #333;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 11px;
+}
+
+input#qt {
+    width: 80px;
+}
+
+.bug form input[type="reset"] {
+    border-radius: 5px;
+    background: #222222;
+    background: linear-gradient(to bottom, #222222 13%, #000000 95%);
+    background: -moz-linear-gradient(to bottom, #222222 13%, #000000 95%);
+    background: -webkit-linear-gradient(to bottom, #222222 13%, #000000 95%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#222222", endColorstr="#000000", GradientType=1);
+    border: 1px solid #444;
+    color: #777777;
+    outline: 0;
+    font-weight: 700;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.6);
+    width: 100px;
+    height: 35px;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.bug form button {
+    width: 160px;
+    height: 35px;
+    z-index: 2;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #661A00;
+    font-weight: 700;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.6);
+    background: #FFBF00;
+    background: linear-gradient(to bottom, #FFBF00 -29%, rgba(238, 34, 35, 0.9) 137%);
+    background: -moz-linear-gradient(to bottom, #FFBF00 -29%, rgba(238, 34, 35, 0.9) 137%);
+    background: -webkit-linear-gradient(to bottom, #FFBF00 -29%, rgba(238, 34, 35, 0.9) 137%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFBF00", endColorstr="#EE2223", GradientType=1);
+    font-size: 13px;
+    outline: 0;
+    padding-right: 15px;
+}
+
+.bug form button:after {
+    content: url(https://i.imgur.com/UZP5sNG.png);
+    position: absolute;
+    margin-left: 5px;
+}
+
+.bug form input[type="text"]::-webkit-input-placeholder,
+.bug form input[type="text"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #fff;
+}
+
+.bug form input[type="text"]:-ms-input-placeholder,
+.bug form input[type="text"]:-ms-input-placeholder { /* Chrome/Opera/Safari */
+    color: #fff;
+}
+
+.bug form input[type="text"]::-moz-placeholder,
+.bug form input[type="text"]::-moz-placeholder { /* Chrome/Opera/Safari */
+    color: #fff;
+}
+
+.bug form input[type="text"]:-moz-placeholder,
+.bug form input[type="text"]:-moz-placeholder { /* Chrome/Opera/Safari */
+    color: #fff;
+}
+
+.minha-posicao form {
+    margin-right:10px;
+
+    button {
+        background: unset;
+        border: 0;
+        color: white;
+        transform: rotate(90deg);
+    }
+}
+
+#procurar_nickname {
+    text-align: end;
+    width: 150px;
+    background: unset;
+    border: unset;
+    height: 35px;
+    font-size: 15px;
+    color: white;
+    outline: 0;
+
+    &:-moz-placeholder,
+    &:-moz-placeholder { /* Chrome/Opera/Safari */
+        color: #fff;
+    }
+
+    &::-webkit-input-placeholder,
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #fff;
+    }
+
+    &:-ms-input-placeholder,
+    &:-ms-input-placeholder { /* Chrome/Opera/Safari */
+        color: #fff;
+    }
+
+    &::-moz-placeholder,
+    &::-moz-placeholder { /* Chrome/Opera/Safari */
+        color: #fff;
+    }
+}
